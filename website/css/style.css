@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    /* margin: 0; */
+    /* outline: 1px solid #408b51; */
+}
+
+.flex {
+    display: flex;
+}
+
+/* .center {
+    justify-content: center;
+} */
+
+html {
+    font-size: 100%;
+}
+
+li {
+    list-style: none;
+    width: 80%;
+    margin: 0 2%;
+}
+
+li > a {
+    display: flex;
+    justify-content: center;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 1);
+    border-radius: 30px;
+    color: hsla(267, 95%, 70%, 1);
+    padding: 1.5%;
+    padding: 8px;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(267, 95%, 70%, 1);
+}
+
+dt {
+    margin: 2%;
+}
+
+dt:hover {
+    /* color: hsla(0, 0%, 100%, 1); */
+    opacity: 0.5;
+    /* filter: drop-shadow(0px 5px 10px hsla(267, 95%, 70%, 1)); */
+}
+
+a:hover {
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(267, 95%, 70%, 1);
+    /* color: hsla(267, 95%, 70%, 1); */
+    font-weight: 500;
+    /* filter: drop-shadow(0px 5px 10px hsla(267, 95%, 70%, 1)); */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* .your_css_selector_here */
+    background-color: hsla(204, 0%, 100%, 1);
+    background-image: radial-gradient(circle at 0% 0%, hsla(295.99999999999994, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 20% 0%, hsla(236.91176470588243, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 40% 0%, hsla(186.61764705882354, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 60% 0%, hsla(127.0588235294118, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 80% 0%, hsla(62.20588235294117, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 100% 0%, hsla(23.823529411764703, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -20% 0%, hsla(23.823529411764703, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -40% 0%, hsla(62.20588235294117, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -60% 0%, hsla(127.0588235294118, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -80% 0%, hsla(186.61764705882354, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -100% 0%, hsla(236.91176470588243, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -120% 0%, hsla(295.99999999999994, 77%, 74%, 0.35) 3%, transparent 40%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+}
+
+/* section{
+    width: 300px;
+    height: 300px;
+} */
+
+.your_css_selector_here {
+    background-color: hsla(204, 0%, 100%, 1);
+    background-image: radial-gradient(circle at 0% 0%, hsla(295.99999999999994, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 20% 0%, hsla(236.91176470588243, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 40% 0%, hsla(186.61764705882354, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 60% 0%, hsla(127.0588235294118, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 80% 0%, hsla(62.20588235294117, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 100% 0%, hsla(23.823529411764703, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -20% 0%, hsla(23.823529411764703, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -40% 0%, hsla(62.20588235294117, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -60% 0%, hsla(127.0588235294118, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -80% 0%, hsla(186.61764705882354, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -100% 0%, hsla(236.91176470588243, 77%, 74%, 0.35) 3%, transparent 40%), radial-gradient(circle at -120% 0%, hsla(295.99999999999994, 77%, 74%, 0.35) 3%, transparent 40%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+}
+
+main {
+    padding: 2%;
+    width: 60vw;
+    margin-inline: auto;
+    background-color: hsla(0, 0%, 100%, 1);
+    filter: drop-shadow(0px 5px 10px hsla(267, 95%, 70%, 1));
+}
