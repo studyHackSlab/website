@@ -16,6 +16,19 @@
 
 html {
     font-size: 100%;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.2rem;
 }
 
 li {
@@ -24,7 +37,12 @@ li {
     margin: 0 2%;
 }
 
-li > a {
+li>a {
+    display: flex;
+    justify-content: center;
+}
+
+dt>a {
     display: flex;
     justify-content: center;
 }
@@ -37,15 +55,22 @@ a {
     text-decoration: none;
     color: hsla(0, 0%, 0%, 1);
     border-radius: 30px;
-    color: hsla(267, 95%, 70%, 1);
+    /* color: hsla(267, 95%, 70%, 1); */
     padding: 1.5%;
     padding: 8px;
-    color: hsla(0, 0%, 100%, 1);
-    background-color: hsla(267, 95%, 70%, 1);
+    font-size: 1.1rem;
+    /* color: hsla(0, 0%, 100%, 1); */
+    /* background-color: hsla(267, 95%, 70%, 1); */
+    border: 1px solid hsla(267, 95%, 70%, 1);
 }
 
 dt {
+    width: 22%;
     margin: 2%;
+}
+
+dd{
+    font-size: 1.2rem;
 }
 
 dt:hover {
@@ -58,7 +83,7 @@ a:hover {
     color: hsla(0, 0%, 100%, 1);
     background-color: hsla(267, 95%, 70%, 1);
     /* color: hsla(267, 95%, 70%, 1); */
-    font-weight: 500;
+    font-weight: 700;
     /* filter: drop-shadow(0px 5px 10px hsla(267, 95%, 70%, 1)); */
 }
 
@@ -89,3 +114,63 @@ main {
     background-color: hsla(0, 0%, 100%, 1);
     filter: drop-shadow(0px 5px 10px hsla(267, 95%, 70%, 1));
 }
+
+img {
+    width: 200px;
+    object-fit: cover;
+    margin-left: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img_big {
+    /* width: 500px; */
+    /* margin-left: -250px; */
+    opacity: 0;
+}
+
+/* シャボン玉 */
+.bubble {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), rgba(123, 26, 235, 0.8));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: bubble 2s infinite linear;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        transform: translateY(-200px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* .bubble {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.8));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: bubblePop 1s ease-out forwards;
+}
+
+@keyframes bubblePop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+} */
